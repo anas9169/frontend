@@ -4,7 +4,7 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
 
-const currency='$';
+const currency='₹';
 const delivery_fee=10;
 
     const value = {
@@ -12,9 +12,9 @@ const delivery_fee=10;
     }
 
     return (
-        <ShopContextProvider value={value}>
+        <ShopContext.Provider value={value}>
             {props.children}
-        </ShopContextProvider>
+        </ShopContext.Provider>
     )
 }
 
